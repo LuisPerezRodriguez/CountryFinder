@@ -87,7 +87,7 @@ h6 {
 #icon {
   height: 2.3rem;
   width: 2.3rem;
-  background-image: url(resources/WorldIcon.png);
+  background-image: url('..resources/WorldIcon.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -319,7 +319,7 @@ footer {
 }
 
 .footer-container__logo {
-  background-image: url('resources/GairoLogo.png');
+  background-image: url('../resources/GairoLogo.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 2.5rem;

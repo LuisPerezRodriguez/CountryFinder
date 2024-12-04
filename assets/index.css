@@ -4,7 +4,7 @@ body {
 .img-container {
   height: 200px;
   width: 300px;
-  background-image: url(/resources/WorldMap.jpg);
+  background-image: url('../resources/WorldMap.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
