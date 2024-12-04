@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+.img-container {
+  height: 200px;
+  width: 300px;
+  background-image: url(resources/WorldMap.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: height 0.3s ease, width 0.3s ease;
+  border-radius: 250px;
+}
+@media (min-width: 600px) {
+  .img-container {
+    height: 300px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-container {
+    height: 400px;
+    width: 800px;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries by region</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="nav">
+        <div class="menu-btn" onclick="openSidenav()">
+          <i class="material-icons">menu</i>
+        </div>
+        <ul class="nav__list">
+          <li>
+            <a href="index.html" class="a-display"><i id="icon"></i></a>
+          </li>
+          <div class="nav__list-anchors">
+            <li>
+              <a href="name.html" class="a-display">SEARCH BY NAME</a>
+            </li>
+            <li>
+              <a href="continent.html" class="a-display">SEARCH BY REGION</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Sidenav -->
+      <div class="sidenav-container" id="sidenav-container">
+        <div id="sidenav" class="sidenav links">
+          <button class="close-btn" onclick="closeSidenav()">X</button>
+          <a href="index.html" class="a-display"><i id="icon"></i></a>
+          <a href="name.html" class="a-display">SEARCH BY NAME</a>
+          <a href="continent.html" class="a-display">SEARCH BY REGION</a>
+        </div>
+      </div>
+    </header>
+      
+    <main class="main container">
+      <h1>Search country by region</h1>
+      <section class="search">
+        <h2>List of regions</h2>
+        <div class="search__bar">
+          <select id="region-select">
+            <option value="Africa">Africa</option>
+            <option value="Americas">Americas</option>
+            <option value="Antarctic">Antarctic</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+          </select>
+          <button id="search-btn-region" class="material-icons">search</button>
+        </div>
+      </section>
+    </section>
+    <section id="search-results">
+      <div></div>
+    </section>
+    <section>
+      <!-- Modal Structure -->
+      <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <button
+            id="close-modal-btn"
+            class="close-modal-btn"
+            onclick="closeModal()"
+          >
+            X
+          </button>
+          <h3 id="modal-name-common"></h3>
+          <div class="modal-info">
+            <div>
+              <p id="modal-name-official"></p>
+              <p id="modal-capital"></p>
+              <p id="modal-population"></p>
+            </div>
+            <div>
+              <p id="modal-flag"></p>
+            </div>
+            <div>
+              <h2>Dynamic Location Map with Leaflet</h2>
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p class="footer-container__text">&copy; Gairo 2024</p>
+        <figure class="footer-container__logo"></figure>
+      </div>
+    </footer>
+
+    <script src="assets/shared.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="assets/continent.js"></script>
+  </body>
+</html>

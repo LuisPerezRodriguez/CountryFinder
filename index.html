@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/index.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="nav">
+        <div class="menu-btn" onclick="openSidenav()">
+          <i class="material-icons">menu</i>
+        </div>
+        <ul class="nav__list">
+          <li>
+            <a href="index.html" class="a-display"><i id="icon"></i></a>
+          </li>
+          <div class="nav__list-anchors">
+            <li>
+              <a href="name.html" class="a-display">SEARCH BY NAME</a>
+            </li>
+            <li>
+              <a href="continent.html" class="a-display">SEARCH BY REGION</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Sidenav -->
+      <div class="sidenav-container" id="sidenav-container">
+        <div id="sidenav" class="sidenav links">
+          <button class="close-btn" onclick="closeSidenav()">X</button>
+          <a href="index.html" class="a-display"><i id="icon"></i></a>
+          <a href="name.html" class="a-display">SEARCH BY NAME</a>
+          <a href="continent.html" class="a-display">SEARCH BY REGION</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="img-container container"></div>
+      <section class="welcome container">
+        <h1>Welcome to our Global Country Explorer!</h1>
+        <p>This website offers various functions to help you explore countries from around the world</p>
+        <div class="card">
+          <h3>Browse by Country Name</h3>
+          <p>You can search for countries by their name, allowing you to quickly find specific nations.</p>
+        </div>
+        <div class="card">    
+          <h3>Browse by Continent</h3>
+          <p>Alternatively, explore countries by continent to get an overview of regions around the globe.</p>
+        </div>
+        <div class="card">    
+          <h3>Access Basic Information</h3>
+          <p>Each country page provides basic information, including essential facts, geographic details, population, and more.
+          </p>
+        </div>
+      </section>
+      <section class="user-cards">
+        <div id="user-container"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p class="footer-container__text">&copy; Gairo 2024</p>
+        <figure class="footer-container__logo"></figure>
+      </div>
+    </footer>
+
+    <script src="assets/shared.js"></script>
+  </body>
+</html>
