@@ -319,7 +319,7 @@ footer {
 }
 
 .footer-container__logo {
-  background-image: url(resources/GairoLogo.png);
+  background-image: url('resources/GairoLogo.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 2.5rem;
