@@ -4,7 +4,6 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.5rem;
   background: linear-gradient(to bottom, #ffffff, #b7b9bc);
-  color: #333;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -354,6 +353,9 @@ footer {
   }
   .country-info {
     width: 60%;
+  }
+  .main-card {
+    flex-direction: column;
   }
   .card {
     min-height: 180px;
