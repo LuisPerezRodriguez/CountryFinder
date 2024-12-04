@@ -12,6 +12,7 @@ body {
   min-height: 110vh;
   gap: 2rem;
   font-family: Arial, sans-serif;
+  color: black;
 }
 main {
   margin: 3rem auto;
@@ -40,6 +41,9 @@ h6 {
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
+}
+.a-decoration {
+  text-decoration: none;
 }
 
 .nav-container-logo {
@@ -215,6 +219,7 @@ h6 {
   transition: transform 0.3s, box-shadow 0.3s;
   margin: 2rem 0;
   max-width: 650px;
+  color: black;
 }
 
 .card:hover {
