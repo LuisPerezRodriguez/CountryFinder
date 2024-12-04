@@ -11,4 +11,5 @@ function searchCountriesByRegion() {
 
 searchBtnRegion.addEventListener('click', searchCountriesByRegion);
 
+window.addEventListener('load', fetchCountriesInfo);
 window.addEventListener('load', init);
